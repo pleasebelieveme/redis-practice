@@ -108,6 +108,7 @@ public class ItemService {
                 .item(item)
                 .count(1)
                 .build()));*/
+		// TODO 변경된 부분
         orderOps.rightPush("orderCache::behind", dto);
         rankOps.incrementScore(
                 "soldRanks",
@@ -128,6 +129,7 @@ public class ItemService {
         // 적재된 주문을 처리하기 위해 별도로 이름을 변경하기 위해
         orderTemplate.rename("orderCache::behind", "orderCache::now");
         log.info("saving {} orders to db", orderOps.size("orderCache::now"));
+		// TODO 추후 null처리 필요
         orderRepository.saveAll(orderOps.range("orderCache::now", 0, -1).stream()
                 .map(dto -> ItemOrder.builder()
                         .itemId(dto.getItemId())

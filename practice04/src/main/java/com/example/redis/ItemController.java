@@ -66,7 +66,7 @@ public class ItemController {
     }
 
     @PostMapping("{id}/purchase")
-    @ResponseStatus(HttpStatus.ACCEPTED)
+    @ResponseStatus(HttpStatus.ACCEPTED) // 완료되지는 않았지만 너의 요청을 처리할 예정이야
     public void purchase(
             @RequestBody
             ItemOrderDto dto
