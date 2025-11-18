@@ -3,7 +3,6 @@ package com.example.redis.domain;
 import jakarta.persistence.*;
 import lombok.*;
 
-
 @Getter
 @Entity
 @Builder
