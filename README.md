@@ -1,4 +1,4 @@
-# Redis Practice Summary
+# Redis Practice Summary(2025.11.18)
 
 Redis를 활용해 **세션 클러스터링**, **비회원 장바구니**, **캐싱**, **리더보드 & Write-Behind 전략**을 구현한 실습 내용을 요약 정리한 문서입니다.
 
@@ -86,5 +86,3 @@ Store 엔티티 CRUD에 Redis 캐싱을 적용하여 조회 성능을 개선한�
 | 비회원 장바구니 | Hash + TTL | 로그인 없는 사용자 데이터 관리 |
 | Store 캐싱 | Spring Cache + Redis | Cache-Aside / Write-Through |
 | 리더보드 & Write-Behind | Sorted Set + 수동 캐싱 | 고성능 랭킹, 지연 쓰기 |
-
-Redis의 핵심 기능을 실제 시나리오에 적용해보며, 캐싱·세션 관리·랭킹 시스템·지연 쓰기 전략 등을 종합적으로 실습하였다.
