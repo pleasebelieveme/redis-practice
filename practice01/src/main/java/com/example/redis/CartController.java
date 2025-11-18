@@ -1,7 +1,6 @@
 package com.example.redis;
 
 import jakarta.servlet.http.HttpSession;
-import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
